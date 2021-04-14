@@ -46,3 +46,12 @@
   color:#1cc7c1;
   
 }
+.button {
+  background: #0ad7e6;
+  background: #0caada;
+  margin-bottom: 25px;
+  border-radius: 32px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}

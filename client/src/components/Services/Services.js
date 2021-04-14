@@ -19,7 +19,7 @@ const servicesData = [
 ];
 const Services = () => {
   return (
-    <section className="services-container">
+    <section className="services-container row mt-4">
       <div className="text-center mt-5">
         <h5 style={{ color: "#1CC7C1" }} className="">
           Our Services

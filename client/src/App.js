@@ -1,12 +1,15 @@
 import React, { createContext, useState } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import './App.css';
 import Appointment from "./components/Appointment/Appointment";
+import AddDoctor from "./components/Dashboard/AddDoctor/AddDoctor";
 import AllPatients from "./components/Dashboard/AllPatients/AllPatients";
 import Dashboard from "./components/Dashboard/MainDashboard/Dashboard";
 import Home from "./components/Home/Home";
 import PrivateRoute from "./components/Login/PrivateRoute/PrivateRoute";
 import SignIn from "./components/Login/SignInAndUp/SignIn";
 export const UserContext = createContext();
+
 function App() {
   const [loggedInUser, setLoggedInUser] = useState({});
   return (
@@ -27,6 +30,9 @@ function App() {
         </PrivateRoute>
         <PrivateRoute path ="/dashboard/allPatients">
           <AllPatients></AllPatients>
+        </PrivateRoute>
+        <PrivateRoute path ="/dashboard/addDoctor">
+          <AddDoctor></AddDoctor>
         </PrivateRoute>
         <Route path ="/login">
           <SignIn></SignIn>
